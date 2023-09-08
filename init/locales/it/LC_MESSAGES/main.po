@@ -1,0 +1,67 @@
+# Italian translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-21 21:07+0200\n"
+"PO-Revision-Date: 2023-09-05 23:12+0200\n"
+"Last-Translator: EMAIL@ADDRESS\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CP1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: suiteAV.py:88 suiteAV.py:112
+msgid " NO UPDATE "
+msgstr " NESSUN AGGIORNAMENTO "
+
+#: suiteAV.py:92 suiteAV.py:116
+msgid " UPDATE "
+msgstr " AGGIORNAMENTO "
+
+#: suiteAV.py:109
+msgid " SITE OFFLINE "
+msgstr " SITO OFFLINE "
+
+#: suiteAV.py:123 suiteAV.py:125
+msgid "*************"
+msgstr "*******************"
+
+#: suiteAV.py:124
+msgid "* Main Menu *"
+msgstr "* Menù Principale *"
+
+#: suiteAV.py:128
+msgid "[1] Updates"
+msgstr "[1] Aggiornamenti"
+
+#: suiteAV.py:134
+msgid "[3] Downloads"
+msgstr "[3] Scaricati"
+
+#: suiteAV.py:138
+msgid "[0] Quit"
+msgstr "[0] Esci"
+
+#: suiteAV.py:148
+msgid "Option not found!"
+msgstr "Opzione non trovata!"
+
+#: suiteAV.py:149 suiteAV.py:154 suiteAV.py:159
+msgid "Press ENTER to continue"
+msgstr "Premere INVIO per continuare"
+
+#: suiteAV.py:153 suiteAV.py:158
+msgid "Invalid command!"
+msgstr "Comando non valido!"
+
+#: suiteAV.py:162
+msgid "System terminated"
+msgstr "Sistema terminato"

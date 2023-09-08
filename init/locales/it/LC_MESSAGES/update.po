@@ -1,0 +1,67 @@
+# Italian translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-21 19:41+0200\n"
+"PO-Revision-Date: 2023-09-08 18:19+0200\n"
+"Last-Translator: EMAIL@ADDRESS\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CP1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: update.py:38 update.py:40
+msgid "***************"
+msgstr "**********************"
+
+#: update.py:39
+msgid "* Update Menu *"
+msgstr "* Menù Aggiornamento *"
+
+#: update.py:43
+msgid "[1] Update suiteAV"
+msgstr "[1] Aggiorna suiteAV"
+
+#: update.py:44
+msgid "[2] Update Youtube software"
+msgstr "[2] Aggiorna software Youtube"
+
+#: update.py:49
+msgid "[0] Back"
+msgstr "[0] Indietro"
+
+#: update.py:59
+msgid "Option not found!"
+msgstr "Opzione non trovata!"
+
+#: update.py:60 update.py:64 update.py:69 update.py:102 update.py:131
+msgid "Press ENTER to continue"
+msgstr "Premere INVIO per continuare"
+
+#: update.py:63 update.py:68
+msgid "Invalid command!"
+msgstr "Comando non valido!"
+
+#: update.py:72
+msgid "System terminated"
+msgstr "Sistema terminato"
+
+#: update.py:83 update.py:112
+msgid "Updating..."
+msgstr "Aggiornamento..."
+
+#: update.py:98
+msgid "SuiteAV update completed, restart the program!"
+msgstr "Aggiornamento suiteAV completato, riavviare il programma!"
+
+#: update.py:131
+msgid "Update completed!"
+msgstr "Aggiornamento completato!"

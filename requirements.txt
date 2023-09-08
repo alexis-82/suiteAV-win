@@ -1,0 +1,13 @@
+Brotli
+certifi
+colorama
+mutagen
+pycryptodomex
+simple-colors
+websockets
+xdg
+yt-dlp
+zipp
+python-gettext
+regex
+requests

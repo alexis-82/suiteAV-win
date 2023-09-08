@@ -1,0 +1,112 @@
+# Italian translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-22 01:00+0200\n"
+"PO-Revision-Date: 2023-08-22 01:01+0200\n"
+"Last-Translator: EMAIL@ADDRESS\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CP1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: youtube.py:49
+msgid "[1] What resolution can I download?"
+msgstr "[1] A che risoluzione posso scaricare?"
+
+#: youtube.py:50
+msgid "[2] Download in manual mode"
+msgstr "[2] Scarica in modalità manuale"
+
+#: youtube.py:53
+msgid "[3] Download from 360p link"
+msgstr "[3] Scarica dal link 360p"
+
+#: youtube.py:54
+msgid "[4] Download from 480p link"
+msgstr "[4] Scarica dal link 480p"
+
+#: youtube.py:55
+msgid "[5] Download from link to 720p"
+msgstr "[5] Scarica da link a 720p"
+
+#: youtube.py:56
+msgid "[6] Download from link to better quality"
+msgstr "[6] Scarica dal link a una qualità migliore"
+
+#: youtube.py:57
+msgid "[7] Download from link to best quality with split*"
+msgstr "[7] Scarica dal link alla migliore qualità con split*"
+
+#: youtube.py:58
+msgid "[8] Download from best quality link with metadata*"
+msgstr "[8] Scarica dal link alla migliore qualità con metadati*"
+
+#: youtube.py:61
+msgid "[9] Downloading Playlist via file"
+msgstr "[9] Download della playlist tramite file"
+
+#: youtube.py:68
+msgid "[11] Download to MP3 HQ"
+msgstr "[11] Download su MP3 HQ"
+
+#: youtube.py:69
+msgid "[12] Download album to MP3 HQ with split*"
+msgstr "[12] Scarica l'album in MP3 HQ con split*"
+
+#: youtube.py:71
+msgid "[13] Download MP3 via file"
+msgstr "[13] Scarica MP3 tramite file"
+
+#: youtube.py:76
+msgid "[0] Back"
+msgstr "[0] Indietro"
+
+#: youtube.py:86
+msgid "Option not found!"
+msgstr "Opzione non trovata!"
+
+#: youtube.py:87 youtube.py:92 youtube.py:97 youtube.py:126 youtube.py:139
+#: youtube.py:152 youtube.py:165 youtube.py:178 youtube.py:194 youtube.py:210
+#: youtube.py:227 youtube.py:243 youtube.py:256
+msgid "Press ENTER to continue"
+msgstr "Premere INVIO per continuare"
+
+#: youtube.py:91 youtube.py:96
+msgid "Invalid command!"
+msgstr "Comando non valido!"
+
+#: youtube.py:116
+msgid "Enter quality code, e.g.245+91 (video+audio): "
+msgstr "Inserire il codice di qualità, ad esempio 245+91 (video+audio): "
+
+#: youtube.py:122 youtube.py:135 youtube.py:148 youtube.py:161 youtube.py:174
+#: youtube.py:190 youtube.py:206 youtube.py:223 youtube.py:239 youtube.py:252
+msgid "Operation completed!"
+msgstr "Operazione completata!"
+
+#: youtube.py:129 youtube.py:142 youtube.py:155 youtube.py:168 youtube.py:184
+#: youtube.py:200 youtube.py:217 youtube.py:233
+#, fuzzy
+msgid "Copy video or playlist link: "
+msgstr "Copia il link di un video o playlist: "
+
+#: youtube.py:182 youtube.py:231
+msgid "*The split function only works if metadata is present in the video!"
+msgstr "*La funzione di divisione funziona solo se i metadati sono presenti nel video!"
+
+#: youtube.py:198
+msgid "*The metadata function only works if metadata is present in the video!"
+msgstr "*La funzione dei metadati funziona solo se i metadati sono presenti nel video!"
+
+#: youtube.py:246
+msgid "Enter playlist file name: "
+msgstr "Inserire il nome del file della playlist: "

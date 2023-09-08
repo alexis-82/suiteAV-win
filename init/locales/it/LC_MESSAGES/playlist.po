@@ -1,0 +1,56 @@
+# Italian translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-21 19:44+0200\n"
+"PO-Revision-Date: 2023-08-21 20:27+0200\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CP1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: playlist.py:50
+msgid "[1] Download playlist with meta via file"
+msgstr "[1] Scaricare playlist con meta tramite file"
+
+#: playlist.py:51
+msgid "[2] Download playlist by file with split"
+msgstr "[2] Scaricare playlist da file con split"
+
+#: playlist.py:52
+msgid "[3] Download playlist with chapter numbering"
+msgstr "[3] Scaricare playlist con numerazione capitolo"
+
+#: playlist.py:57
+msgid "[0] Back"
+msgstr "[0] Indietro"
+
+#: playlist.py:67
+msgid "Option not found!"
+msgstr "Opzione non trovata!"
+
+#: playlist.py:68 playlist.py:73 playlist.py:78 playlist.py:92 playlist.py:104
+#: playlist.py:116
+msgid "Press ENTER to continue"
+msgstr "Premere INVIO per continuare"
+
+#: playlist.py:72 playlist.py:77
+msgid "Invalid command!"
+msgstr "Comando non valido!"
+
+#: playlist.py:83 playlist.py:95 playlist.py:107
+msgid "Enter playlist file name: "
+msgstr "Inserire nome del file della playlist: "
+
+#: playlist.py:88 playlist.py:100 playlist.py:112
+msgid "Operation completed!"
+msgstr "Operazione completata!"
