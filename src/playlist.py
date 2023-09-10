@@ -81,7 +81,7 @@ def main():
         file = input(_("Enter playlist file name: "))
         convert ="%s -f bestvideo+bestaudio/best --add-meta -o %s -a %s"
         os.system(convert % (ytdl, string1, file))
-        subprocess.call("move tmp\\*.mp4 tmp\\*.mkv tmp\\*.webm ..\\Downloads\\Video\\", shell=True)
+        subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         print()
         print(_("Operation completed!"))
         print()
@@ -93,7 +93,7 @@ def main():
         link = input(_("Enter playlist file name: "))
         convert = "%s -f bestvideo+bestaudio/best --split-chapters -o %s -P tmp -a %s"
         os.system(convert % (ytdl, string2, link))
-        subprocess.call("move tmp\\*.mp4 tmp\\*.mkv tmp\\*.webm ..\\Downloads\\Video\\", shell=True)
+        subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         print()
         print(_("Operation completed!"))
         print()
@@ -105,7 +105,7 @@ def main():
         link = input(_("Enter playlist file name: "))
         convert = "%s -f bestvideo+bestaudio/best -cio %s -a %s"
         os.system(convert % (ytdl, string3, link))
-        subprocess.call("move tmp\\*.mp4 tmp\\*.mkv tmp\\*.webm ..\\Downloads\\Video\\", shell=True)
+        subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         print()
         print(_("Operation completed!"))
         print()
