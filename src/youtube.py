@@ -244,7 +244,7 @@ def main():
 		subprocess.call("init\\youtube.exe", shell=True)
 	if youtube == 12:
 		link = input(_("Enter playlist file name: "))
-		convert = "%s -x --audio-format mp3 --audio-quality 0 -o %s -a %s"
+		convert = "%s -x --audio-format mp3 --audio-quality 0 --embed-thumbnail --convert-thumbnails jpg -o %s -a %s"
 		os.system(convert % (ytdl, string1, link))
 		subprocess.call("move tmp\\*.mp3 .\\Downloads\\Audio\\", shell=True)
 		#subprocess.call("rm nohup.out", shell=True)
