@@ -9,6 +9,21 @@ import time
 import gettext
 import requests
 import re
+import ctypes
+
+# Ottieni l'handle della console
+kernel32 = ctypes.windll.kernel32
+hWnd = kernel32.GetConsoleWindow()
+
+# Importa user32.dll
+user32 = ctypes.windll.user32
+
+# Definisci le dimensioni desiderate (larghezza, altezza)
+width = 800
+height = 600
+
+# Ridimensiona la finestra
+user32.SetWindowPos(hWnd, 0, 100, 100, width, height, 0x0040)
 
 translations = gettext.translation("main", localedir="locales", languages=["it"])
 translations.install()
@@ -17,7 +32,7 @@ translations.install()
 init(autoreset=True)
 
 
-sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
+#sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
 
 
 subprocess.call("cls", shell=True)
