@@ -20,7 +20,7 @@ user32 = ctypes.windll.user32
 
 # Definisci le dimensioni desiderate (larghezza, altezza)
 width = 800
-height = 600
+height = 800
 
 # Ridimensiona la finestra
 user32.SetWindowPos(hWnd, 0, 100, 100, width, height, 0x0040)
