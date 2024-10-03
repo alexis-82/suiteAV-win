@@ -111,7 +111,8 @@ def yt_dl():
 		print()
 		print(_("Updating..."))
 		print()
-		subprocess.call("yt-dlp.exe -U", shell=True)
+		# subprocess.call("yt-dlp.exe -U", shell=True)
+		subprocess.call("pip install --upgrade yt-dlp", shell=True)
 		subprocess.call("yt-dlp --version > yt-dlp", shell=True)
 		with open("yt-dlp", "r") as file:
 			lines = file.readlines()
