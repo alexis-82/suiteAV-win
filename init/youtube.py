@@ -14,6 +14,8 @@ import gettext
 
 translations = gettext.translation("youtube", localedir="locales", languages=["it"])
 translations.install()
+_ = translations.gettext  # Definisci '_' qui
+
 
 init(autoreset=True)
 
@@ -36,7 +38,7 @@ print((Fore.RED + "  !@@!!  @!@  !@! !!@   @!!   @!!!:!        @!@!@!@! @!@  !@!
 print((Fore.RED + "     !:! !!:  !!! !!:   !!:   !!:           !!:  !!!  !: .:!  "))
 print((Fore.RED + " ::.: :   :.:: :  :      :    : :: :::       :   : :    ::    "))
 print((Fore.RESET))
-print((Fore.GREEN + "                  suiteAV-3.0 Coded by Alexis                "))
+print((Fore.GREEN + "                  suiteAV-3.2 Coded by Alexis                "))
 print((Fore.GREEN + "                  ---------------------------                "))
 print((Fore.RESET))
 print()

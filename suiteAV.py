@@ -23,6 +23,8 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=50, cols=80))
 
 translations = gettext.translation("main", localedir="locales", languages=["it"])
 translations.install()
+_ = translations.gettext  # Definisci '_' qui
+
 
 
 init(autoreset=True)
@@ -80,7 +82,7 @@ print((Fore.RED + "  !@@!!  @!@  !@! !!@   @!!   @!!!:!        @!@!@!@! @!@  !@!
 print((Fore.RED + "     !:! !!:  !!! !!:   !!:   !!:           !!:  !!!  !: .:!  "))
 print((Fore.RED + " ::.: :   :.:: :  :      :    : :: :::       :   : :    ::    "))
 print((Fore.RESET))
-print((Fore.GREEN + "                  suiteAV-3.0 Coded by Alexis               "))
+print((Fore.GREEN + "                  suiteAV-3.2 Coded by Alexis               "))
 print((Fore.GREEN + "                  ---------------------------               "))
 print((Style.RESET_ALL))
 print()
