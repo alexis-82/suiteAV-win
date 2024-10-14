@@ -26,9 +26,9 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
 # Start program
 
 ytdl = "yt-dlp"
-string1 = "tmp/%(title)s.%(ext)s"
+string1 = "%(title)s.%(ext)s"
 string2 = "chapter:%(section_title)s.%(ext)s"
-string3 = "tmp/%(autonumber)s-%(title)s.%(ext)s"
+string3 = "%(autonumber)s-%(title)s.%(ext)s"
 
 
 subprocess.call("cls", shell=True)
@@ -84,7 +84,7 @@ except SyntaxError:
 def main():
     if youtube == 1:
         file = input(_("Enter playlist file name: "))
-        convert ="%s -f bestvideo+bestaudio/best --add-meta -o '%s' -a '%s'"
+        convert ='%s -f bestvideo+bestaudio/best --add-meta -o "%s" -P tmp -a "%s"'
         os.system(convert % (ytdl, string1, file))
         subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         #subprocess.call("rm nohup.out", shell=True)
@@ -98,7 +98,7 @@ def main():
         subprocess.call("python init\\playlist.py", shell=True)
     if youtube == 2:
         link = input(_("Enter playlist file name: "))
-        convert = "%s -f bestvideo+bestaudio/best --split-chapters -o '%s' -P tmp -a '%s'"
+        convert = '%s -f bestvideo+bestaudio/best --split-chapters -o "%s" -P tmp -a "%s"'
         os.system(convert % (ytdl, string2, link))
         subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         #subprocess.call("rm nohup.out", shell=True)
@@ -112,7 +112,7 @@ def main():
         subprocess.call("python init\\playlist.py", shell=True)
     if youtube == 3:
         link = input(_("Enter playlist file name: "))
-        convert = "%s -f bestvideo+bestaudio/best -cio '%s' -a '%s'"
+        convert = '%s -f bestvideo+bestaudio/best -cio "%s" -P tmp -a "%s"'
         os.system(convert % (ytdl, string3, link))
         subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         #subprocess.call("rm nohup.out", shell=True)
@@ -126,7 +126,7 @@ def main():
         subprocess.call("python init\\playlist.py", shell=True)
     if youtube == 4:
         file = input(_("Enter playlist file name: "))
-        convert ="%s -f bestvideo+bestaudio/best -o '%s' -a '%s'"
+        convert ='%s -f bestvideo+bestaudio/best -o "%s" -P tmp -a "%s"'
         os.system(convert % (ytdl, string1, file))
         subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
         #subprocess.call("rm nohup.out", shell=True)
