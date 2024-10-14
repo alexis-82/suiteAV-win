@@ -93,7 +93,7 @@ def suiteAV():
 		with zipfile.ZipFile("suiteAv.zip") as z:
 			z.extractall()
 		#subprocess.call("move suiteAV-win-main\\* .\\", shell=True)
-		subprocess.call("xcopy suiteAV-win-main\\* .\\ /E /H /C /I", shell=True)
+		subprocess.call("xcopy suiteAV-win-main\\* .\\ /E /H /C /I /Y", shell=True)
 		subprocess.call("del /f suiteAV.zip", shell=True)
 		subprocess.call("rmdir /q /s suiteAV-win-main", shell=True)
 		time.sleep(3)
