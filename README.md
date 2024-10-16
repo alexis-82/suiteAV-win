@@ -54,6 +54,15 @@ suiteAV.exe
 ### Screenshot
 ![Screenshot](https://i.postimg.cc/XqS2LLQn/suiteav.png)
 
+### FIX
+⚠️ If you experience issues starting the installer, it is probably a windows defender issue, right click and select properties then tick unblock checkbox and apply!
+
+⚠️ Se riscontri problemi durante l'avvio del programma di installazione, probabilmente si tratta di un problema di Windows Defender, fai clic con il pulsante destro del mouse e seleziona le proprietà, quindi seleziona la casella di controllo Sblocca e applica!
+
+![Screenshot](https://i.postimg.cc/0jqgkS1z/block.png)
+
+
+
 
 
 
