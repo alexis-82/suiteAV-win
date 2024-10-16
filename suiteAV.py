@@ -35,7 +35,7 @@ init(autoreset=True)
 
 subprocess.call("cls", shell=True)
 
-url = "https://raw.githubusercontent.com/alexis-82/varius/master/check"
+url = "https://raw.githubusercontent.com/alexis-82/scripts/refs/heads/master/check"
 
 # Effettua una richiesta GET per ottenere il contenuto della pagina HTML
 response = requests.get(url)
