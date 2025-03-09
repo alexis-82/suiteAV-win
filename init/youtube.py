@@ -200,7 +200,7 @@ def main():
 		print((Fore.RED + _("*The metadata function only works if metadata is present in the video!")))
 		print((Style.RESET_ALL))
 		link = input(_("Copy video or playlist link: "))
-		convert = "%s -f bestvideo+bestaudio/best -add-meta  -o %s %'"
+		convert = "%s -f bestvideo+bestaudio/best --add-meta  -o %s %s"
 		os.system(convert % (ytdl, string1, link))
 		subprocess.call("@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
 		#subprocess.call("rm nohup.out", shell=True)
