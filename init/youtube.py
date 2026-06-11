@@ -189,7 +189,7 @@ def main():
         subprocess.call("python init\\youtube.py", shell=True)
     if youtube == 7:
         link = input(_("Copy video or playlist link: "))
-        convert = "%s -f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' --merge-output-format mp4 -o '%s' '%s'"
+        convert = convert = '%s -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "%s" "%s"'
         os.system(convert % (ytdl, string1, link))
         subprocess.call(
             "@move tmp\\*.mp4 .\\Downloads\\Video\\ || @move tmp\\*.mkv .\\Downloads\\Video\\ || @move tmp\\*.webm .\\Downloads\\Video\\", shell=True)
