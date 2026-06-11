@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import os, sys, subprocess
+import os
+import sys
+import subprocess
 import os.path
 from colorama import Fore, Back, Style, init
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 import signal
 import time
 import gettext
@@ -21,16 +25,16 @@ user32 = ctypes.windll.user32
 # Definisci le dimensioni desiderate (larghezza, altezza)
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=50, cols=80))
 
-translations = gettext.translation("main", localedir="locales", languages=["it"])
+translations = gettext.translation(
+    "main", localedir="locales", languages=["it"])
 translations.install()
 _ = translations.gettext  # Definisci '_' qui
-
 
 
 init(autoreset=True)
 
 
-#sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
+# sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
 
 
 subprocess.call("cls", shell=True)
@@ -82,53 +86,59 @@ print((Fore.RED + "  !@@!!  @!@  !@! !!@   @!!   @!!!:!        @!@!@!@! @!@  !@!
 print((Fore.RED + "     !:! !!:  !!! !!:   !!:   !!:           !!:  !!!  !: .:!  "))
 print((Fore.RED + " ::.: :   :.:: :  :      :    : :: :::       :   : :    ::    "))
 print((Fore.RESET))
-print((Fore.GREEN + "                  suiteAV-3.2 Coded by Alexis               "))
+print((Fore.GREEN + "                  suiteAV-3.3 Coded by Alexis               "))
 print((Fore.GREEN + "                  ---------------------------               "))
 print((Style.RESET_ALL))
 print()
 
+
 def checkyoutube():
-	file1_path = 'update'
-	file2_path = 'yt-ver'
+    file1_path = 'update'
+    file2_path = 'yt-ver'
 
-	with open(file1_path, 'r', encoding='utf-8') as check1:
-		file1 = check1.read()
+    with open(file1_path, 'r', encoding='utf-8') as check1:
+        file1 = check1.read()
 
-	with open(file2_path, 'r', encoding='utf-8') as check2:
-		file2 = check2.read()
+    with open(file2_path, 'r', encoding='utf-8') as check2:
+        file2 = check2.read()
 
-	if file1 == file2:
-		print("STATUS YOUTUBE-DL:",(Fore.BLACK + Back.GREEN + _(" NO UPDATE ")))
-		print((Style.RESET_ALL))
-		subprocess.call("del update*", shell=True)
-	else:
-		print("STATUS YOUTUBE-DL:",(Fore.BLACK + Back.RED + _(" UPDATE ")))
-		print((Style.RESET_ALL))
-		subprocess.call("del update*", shell=True)
+    if file1 == file2:
+        print("STATUS YOUTUBE-DL:", (Fore.BLACK + Back.GREEN + _(" NO UPDATE ")))
+        print((Style.RESET_ALL))
+        subprocess.call("del update*", shell=True)
+    else:
+        print("STATUS YOUTUBE-DL:", (Fore.BLACK + Back.RED + _(" UPDATE ")))
+        print((Style.RESET_ALL))
+        subprocess.call("del update*", shell=True)
+
+
 checkyoutube()
 
+
 def checksoftware():
-	file1_path = 'check'
-	file2_path = 'version'
+    file1_path = 'check'
+    file2_path = 'version'
 
-	if check is True:
-		with open(file1_path, 'r', encoding='utf-8') as checka:
-			file1 = checka.read()
+    if check is True:
+        with open(file1_path, 'r', encoding='utf-8') as checka:
+            file1 = checka.read()
 
-		with open(file2_path, 'r', encoding='utf-8') as checkb:
-			file2 = checkb.read()
-	
-	if check is False:
-		print("STATUS SUITEAV:",(Fore.BLACK + Back.CYAN + _(" SITE OFFLINE ")))
-		print((Style.RESET_ALL))
-	elif file1 == file2:
-		print("STATUS SUITEAV:",(Fore.BLACK + Back.GREEN + _(" NO UPDATE ")))
-		print((Style.RESET_ALL))
-		subprocess.call("del check*", shell=True)
-	else:
-		print("STATUS SUITEAV:",(Fore.BLACK + Back.RED + _(" UPDATE ")))
-		print((Style.RESET_ALL))
-		subprocess.call("del check*", shell=True)
+        with open(file2_path, 'r', encoding='utf-8') as checkb:
+            file2 = checkb.read()
+
+    if check is False:
+        print("STATUS SUITEAV:", (Fore.BLACK + Back.CYAN + _(" SITE OFFLINE ")))
+        print((Style.RESET_ALL))
+    elif file1 == file2:
+        print("STATUS SUITEAV:", (Fore.BLACK + Back.GREEN + _(" NO UPDATE ")))
+        print((Style.RESET_ALL))
+        subprocess.call("del check*", shell=True)
+    else:
+        print("STATUS SUITEAV:", (Fore.BLACK + Back.RED + _(" UPDATE ")))
+        print((Style.RESET_ALL))
+        subprocess.call("del check*", shell=True)
+
+
 checksoftware()
 
 print()
@@ -174,32 +184,44 @@ except SyntaxError:
 except UnboundLocalError:
     print(_("System terminated"))
 
+
 def update():
-	if select == 1:
-		subprocess.call("cls", shell=True)
-		subprocess.call("python init\\update.py", shell=True)
+    if select == 1:
+        subprocess.call("cls", shell=True)
+        subprocess.call("python init\\update.py", shell=True)
+
+
 update()
 
+
 def youtube():
-	if select == 2:
-		subprocess.call("cls", shell=True)
-		subprocess.call("python init\\youtube.py", shell=True)
+    if select == 2:
+        subprocess.call("cls", shell=True)
+        subprocess.call("python init\\youtube.py", shell=True)
+
+
 youtube()
 
+
 def downloads():
-	if select == 3:
-		#os.system("clear")
-		subprocess.call("start Downloads\\", shell=True)
-		time.sleep(0.5)
-		os.system("cls")
-		os.system("python suiteAV.py")
+    if select == 3:
+        # os.system("clear")
+        subprocess.call("start Downloads\\", shell=True)
+        time.sleep(0.5)
+        os.system("cls")
+        os.system("python suiteAV.py")
+
+
 downloads()
 
+
 def close():
-	if select == 0:
-		subprocess.call("cls", shell=True)
-		#subprocess.call("del /f check*", shell=True)
-		#os.kill(os.getppid(), signal.SIGHUP) # killa tutto il terminale
-		os.system("exit")
-		return
+    if select == 0:
+        subprocess.call("cls", shell=True)
+        # subprocess.call("del /f check*", shell=True)
+        # os.kill(os.getppid(), signal.SIGHUP) # killa tutto il terminale
+        os.system("exit")
+        return
+
+
 close()
