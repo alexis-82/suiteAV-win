@@ -15,6 +15,9 @@ import requests
 import re
 import ctypes
 
+from rich.text import Text
+from rich.console import Console
+
 # Ottieni l'handle della console
 kernel32 = ctypes.windll.kernel32
 hWnd = kernel32.GetConsoleWindow()
@@ -23,7 +26,7 @@ hWnd = kernel32.GetConsoleWindow()
 user32 = ctypes.windll.user32
 
 # Definisci le dimensioni desiderate (larghezza, altezza)
-sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=50, cols=80))
+sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=55, cols=80))
 
 translations = gettext.translation(
     "main", localedir="locales", languages=["it"])
@@ -32,6 +35,8 @@ _ = translations.gettext  # Definisci '_' qui
 
 
 init(autoreset=True)
+console = Console()
+
 
 
 # sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
@@ -80,15 +85,19 @@ if match:
 subprocess.call("del tags", shell=True)
 
 print()
-print((Fore.RED + "  @@@@@@ @@@  @@@ @@@ @@@@@@@ @@@@@@@@       @@@@@@  @@@  @@@ "))
-print((Fore.RED + " !@@     @@!  @@@ @@!   @@!   @@!           @@!  @@@ @@!  @@@ "))
-print((Fore.RED + "  !@@!!  @!@  !@! !!@   @!!   @!!!:!        @!@!@!@! @!@  !@! "))
-print((Fore.RED + "     !:! !!:  !!! !!:   !!:   !!:           !!:  !!!  !: .:!  "))
-print((Fore.RED + " ::.: :   :.:: :  :      :    : :: :::       :   : :    ::    "))
-print((Fore.RESET))
-print((Fore.GREEN + "                  suiteAV-3.3 Coded by Alexis               "))
-print((Fore.GREEN + "                  ---------------------------               "))
-print((Style.RESET_ALL))
+banner_text = Text()
+banner_text.append("  ███████  ██    ██ ██ ████████ ███████      █████  ██    ██\n", style="bold red")
+banner_text.append("  ██       ██    ██ ██    ██    ██          ██   ██ ██    ██\n", style="bold red")
+banner_text.append("  ███████  ██    ██ ██    ██    █████       ███████ ██    ██\n", style="bold red")
+banner_text.append("       ██  ██    ██ ██    ██    ██          ██   ██  ██  ██\n",  style="bold red")
+banner_text.append(" ███████   ██████  ██    ██    ███████     ██   ██   ████\n",   style="bold red")
+
+subtitle = Text("suiteAV-3.3 • Modern YouTube Downloader", style="bold green")
+author   = Text("Coded by Alexis - Modernized Edition",    style="dim green")
+
+console.print(banner_text, justify="center")
+console.print(subtitle, justify="center")
+console.print(author,   justify="center")
 print()
 
 

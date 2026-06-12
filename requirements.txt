@@ -11,3 +11,4 @@ zipp
 python-gettext
 regex
 requests
+rich

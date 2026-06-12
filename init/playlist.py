@@ -12,6 +12,9 @@ import decimal
 import string
 import gettext
 
+from rich.text import Text
+from rich.console import Console
+
 translations = gettext.translation(
     "playlist", localedir="locales", languages=["it"])
 translations.install()
@@ -19,10 +22,11 @@ _ = translations.gettext  # Definisci '_' qui
 
 
 init(autoreset=True)
+console = Console()
 
 subprocess.call("cls", shell=True)
 
-sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=40, cols=80))
+sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=55, cols=80))
 
 # Start program
 
@@ -35,14 +39,20 @@ string4 = "%(chapter_number)s-%(chapter)s.%(ext)s"
 
 subprocess.call("cls", shell=True)
 print()
-print((Fore.RED + "  @@@@@@ @@@  @@@ @@@ @@@@@@@ @@@@@@@@       @@@@@@  @@@  @@@ "))
-print((Fore.RED + " !@@     @@!  @@@ @@!   @@!   @@!           @@!  @@@ @@!  @@@ "))
-print((Fore.RED + "  !@@!!  @!@  !@! !!@   @!!   @!!!:!        @!@!@!@! @!@  !@! "))
-print((Fore.RED + "     !:! !!:  !!! !!:   !!:   !!:           !!:  !!!  !: .:!  "))
-print((Fore.RED + " ::.: :   :.:: :  :      :    : :: :::       :   : :    ::    "))
-print((Fore.RESET))
-print((Fore.GREEN + "                  suiteAV-3.3 Coded by Alexis                "))
-print((Fore.GREEN + "                  ---------------------------                "))
+banner_text = Text()
+banner_text.append("  ███████  ██    ██ ██ ████████ ███████      █████  ██    ██\n", style="bold red")
+banner_text.append("  ██       ██    ██ ██    ██    ██          ██   ██ ██    ██\n", style="bold red")
+banner_text.append("  ███████  ██    ██ ██    ██    █████       ███████ ██    ██\n", style="bold red")
+banner_text.append("       ██  ██    ██ ██    ██    ██          ██   ██  ██  ██\n",  style="bold red")
+banner_text.append(" ███████   ██████  ██    ██    ███████     ██   ██   ████\n",   style="bold red")
+
+subtitle = Text("suiteAV-3.3 • Modern YouTube Downloader", style="bold green")
+author   = Text("Coded by Alexis - Modernized Edition",    style="dim green")
+
+console.print(banner_text, justify="center")
+console.print(subtitle, justify="center")
+console.print(author,   justify="center")
+print()
 print((Fore.RESET))
 print()
 print()
